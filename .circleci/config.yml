@@ -1,15 +1,15 @@
 version: 2.1
 
 orbs:
-  node: circleci/node@1.1
+  win: circleci/windows@1.1
 
 jobs:
   build:
     executor:
-      name: node/default
+      name: win/default
       tag: "10.4"
     steps:
       - checkout
-      - node/with-cache:
+      # - node/with-cache:
       - run: npm install
       - run: npm run test
