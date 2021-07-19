@@ -7,7 +7,7 @@ orbs: # declare what orbs we are going to use
 jobs:
   build:
     executor:
-      name: win/default
+      name: node/default
       size: "medium"
     
     steps:
