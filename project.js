@@ -1,9 +1,9 @@
-function getGreeting(name){
-    return "Hi " + name;
-}
+// function getGreeting(name){
+//     return "Hi " + name;
+// }
 
 
-module.exports = getGreeting;
+// module.exports = getGreeting;
 
 //////////////////
 const { expect } = require("@jest/globals")
