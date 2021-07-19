@@ -5,7 +5,7 @@ version: 2.1 # using 2.1 provides access to orbs and other features
 
 jobs:
   build:
-    executo:
+    executor:
       name: win/default
       size: "medium"
     
@@ -14,4 +14,4 @@ jobs:
       - run: Write-Host "hello, Windows"
       - run: npm insall
       - run: npm run test
-      
+
