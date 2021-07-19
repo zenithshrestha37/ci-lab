@@ -1,15 +1,15 @@
-version: 2.1
-
 orbs:
-  win: circleci/windows@1.1
+  win: circleci/windows@2.2.0 # The Windows orb give you everything you need to start using the Windows executor.
 
 jobs:
-  build:
+  build: # name of your job
     executor:
-      name: win/default
-      tag: "10.4"
+      name: win/default # executor type
+      size: "medium" # resource class, can be "medium", "large", "xlarge", "2xlarge", defaults to "medium" if not specified
+
     steps:
+      # Commands are run in a Windows virtual machine environment
       - checkout
-      # - node/with-cache:
+      - run: Write-Host 'Hello, Windows'
       - run: npm install
       - run: npm run test
