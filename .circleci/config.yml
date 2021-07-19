@@ -17,6 +17,6 @@ workflows:
     steps:
       - checkout
       - run: Write-Host "hello, Windows"
-      - run: npm insall
+      - run: npm install
       - run: npm run test
 
